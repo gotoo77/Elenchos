@@ -1,0 +1,19 @@
+[project]
+name = "elenchos"
+version = "0.1.0"
+description = "Experimental protocols for detecting errors in fallible LLM outputs."
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
